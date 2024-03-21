@@ -1,0 +1,16 @@
+:root {
+    --fontPixels: "VT323", monospace;
+}
+
+body {
+    font-family: var(--fontPixels);
+    font-size: 1.5em;
+    color: lightgreen;
+}
+
+.tag {
+    color: rgb(20, 20, 20);
+    background-color: lightgreen;
+    font-family: var(--fontPixels);
+    border-radius: .2em;
+}
