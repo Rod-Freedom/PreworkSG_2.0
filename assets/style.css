@@ -1,5 +1,77 @@
 :root {
     --fontPixels: "VT323", monospace;
+    --darkBg: rgb(45, 45, 45);
+    --pixelBorder: solid rgb(144, 238, 144, 80%);
+}
+
+.tag:hover {
+    background-color: rgb(82, 233, 82);
+}
+
+.h-full {
+    height: 100%;
+}
+
+body {
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main {
+    height: auto;
+    flex-grow: 1;
+}
+
+.topic {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 2vh 4vw;
+    border-bottom: var(--pixelBorder) .5px;
+}
+
+.topic::after {
+    content: 'v';
+    transform: rotate(-90deg);
+    cursor: pointer;
+}
+
+.card:hover .topic::after {
+    transform: rotate(90deg);
+    transform: scale(1);
+    transition: 100ms;
+}
+
+.bullet-points {
+    display: none;
+}
+
+.card:hover .bullet-points {
+    display: flex;
+    flex-direction: column;
+    transition: 100ms;
+}
+
+.main_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--darkBg);
+    padding: 1vh 0;
+    border-bottom: var(--pixelBorder) 1px;
+}
+
+.main_footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--darkBg);
+    border-top: var(--pixelBorder) 1px;
+    margin: 0;
+    padding: 1vh 0;
 }
 
 body {
@@ -10,7 +82,44 @@ body {
 
 .tag {
     color: rgb(20, 20, 20);
-    background-color: lightgreen;
+    background-color: rgb(144, 238, 144);
     font-family: var(--fontPixels);
     border-radius: .2em;
+    padding: 0 .2em;
+    text-decoration: none;
+}
+
+.bullet-points li {
+    margin: .1em 0;
+}
+
+.profilePic {
+    margin: 0 1vw;
+}
+
+.filter {
+    position: absolute;
+    background-color: rgb(144, 238, 144, 70%);
+    width: 3em;
+    aspect-ratio: 1 / 1;
+    z-index: 2;
+    border: var(--pixelBorder) 1px;
+    border-radius: 100%;
+}
+
+.card {
+    margin: 5vh 3vw;
+    border: var(--pixelBorder) .5px;
+    border-radius: 1px;
+    background-color: rgb(25, 25, 25);
+    /* box-shadow: 10px 10px rgb(144, 238, 144, 70%); */
+}
+
+.cat {
+    position: relative;
+    width: 3em;
+    aspect-ratio: 1 / 1;
+    z-index: 1;
+    border: var(--pixelBorder) 1px;
+    border-radius: 100%;
 }
