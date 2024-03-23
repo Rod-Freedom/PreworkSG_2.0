@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="h-full">
+<html class="h-full" lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,67 +15,71 @@
         <link rel="stylesheet" href="./assets/style.css">
     </head>
 
-    <body>
-        <header class="bg-gray">
+    <body class="h-full">
+        <header class="main_header">
             <h1>STUDY</h1>
-            <img src="./assets/bowtie-cat.png" alt="round profile pic vector cat wearing a bowtie">
+            <a class="profilePic" href="https://github.com/Rod-Freedom" target="_blank">
+              <div class="filter"></div>
+              <img class="cat" src="./assets/bowtie-cat.png" alt="round profile pic vector cat wearing a bowtie">
+            </a>
+            </div>
             <h1>GUIDE</h1>
         </header>
         
         <main>
             <section class="card" id="html-section">
-                <h2>HTML</h2>
-                <ul>
-                    <li>The head element contains information about the webpage.</li>
-                    <li>The body element represents the visible content shown to the user.</li>
+                <h2 class="topic">HTML</h2>
+                <ul class="bullet-points">
+                    <li>The <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head" target="_blank" class="tag">&lt;head&gt;</a> element contains information about the webpage.</li>
+                    <li>The <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body" target="_blank" class="tag">&lt;body&gt;</a> element represents the visible content shown to the user.</li>
                     <li>Use h1, h2... h6 for headings.
                         <ul>
-                            <li>For accessibility, you should only use the <span class="tag">&nbsp;&lt;h1&gt;&nbsp;</span> once, to make clear which one is the heading.</li>
+                            <li>For accessibility, you should only use the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements" target="_blank" class="tag">&lt;h1&gt;</a> once, to make clear which one is the heading.</li>
                         </ul>
                     </li>
-                    <li>The <span class="tag">&nbsp;&lt;ul&gt;&nbsp;</span> is used for an unordered list (bullet-points).</li>
-                    <li>The <span class="tag">&nbsp;&lt;ol&gt;&nbsp;</span> is used for an ordered list (with numbers).</li>
-                    <li>The <span class="tag">&nbsp;&lt;li&gt;&nbsp;</span> is used to list items.</li>
-                    <li>The <span class="tag">&nbsp;&lt;img&gt;&nbsp;</span> is used for images.
+                    <li>The <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul" target="_blank" class="tag">&lt;ul&gt;</a> is used for an unordered list (bullet-points).</li>
+                    <li>The <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol" target="_blank" class="tag">&lt;ol&gt;</a> is used for an ordered list (with numbers).</li>
+                    <li>The <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li" target="_blank" class="tag">&lt;li&gt;</a> is used to list items.</li>
+                    <li>The <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img" target="_blank" class="tag">&lt;img&gt;</a> is used for images.
                         <ul>
-                            <li>For accessibility, you should add a description into the <span class="tag">&nbsp;alt&nbsp;</span> attribute,<br>and a link to your image file into the <span class="tag">&nbsp;src&nbsp;</span> attribute.</li>
+                            <li>For accessibility, you should add a description into the <a class="tag">alt</a> attribute,<br>and a link to your image file into the <a class="tag">src</a> attribute.</li>
                         </ul>
                     </li>
                 </ul>
             </section>
          
             <section class="card" id="css-section">
-                <h2>CSS</h2>
-                <ul>
+                <h2 class="topic">CSS</h2>
+                <ul class="bullet-points">
                   <li>A margin indicates how much space we want around the outside of an element.</li>
                   <li>A padding is a kind of margin around the content but being part of its own background inside the border.</li>
-                  <li>Before the <span class="tag">&nbsp;:&nbsp;</span> you add the property, and after it, the value.</li>
+                  <li>Before the <a class="tag">:</a> you add the property, and after it, the value.</li>
                     <ul>
-                        <li>Remember to close with a <span class="tag">&nbsp;;&nbsp;</span> after the value.
+                        <li>Remember to close with a <a class="tag">;</a> after the value.
                     </ul>
                   <li>If you want to include more than one selector, just use comma's.</li>
-                  <li>The properties names are pretty obvious; like for font size, just type font-size.</li>
+                  <li>The properties names are pretty obvious; like for font size, just type <a class="tag">font-size</a>.</li>
                 </ul>
               </section>
            
               <section class="card" id="git-section">
-                <h2>Git</h2>
-                <ul>
-                  <li>Use <span class="tag">&nbsp;git&nbsp;</span> before each Git statement in the terminal.</li>
-                  <li>Use <span class="tag">&nbsp;checkout&nbsp;</span> to move to a different branch.</li>
-                  <li>Use <span class="tag">&nbsp;-b&nbsp;</span> to create a a new branch next to <span class="tag">&nbsp;git checkout&nbsp;</span>.</li>
-                  <li>Use <span class="tag">&nbsp;pull&nbsp;</span> to update your local branch.</li>
-                  <li>Use <span class="tag">&nbsp;origin&nbsp;</span> to indicate the source of the pull or push.</li>
-                  <li>When using <span class="tag">&nbsp;main&nbsp;</span>, you're refering to the main branch.</li>
-                  <li>Use <span class="tag">&nbsp;push&nbsp;</span> for making changes to a branch.</li>
+                <h2 class="topic">Git</h2>
+                <ul class="bullet-points">
+                  <li>Use <a class="tag">git</a> before each Git statement in the terminal.</li>
+                  <li>Use <a class="tag">checkout</a> to move to a different branch.</li>
+                  <li>Use <a class="tag">-b</a> to create a a new branch next to <a class="tag">git checkout</a>.</li>
+                  <li>Use <a class="tag">pull</a> to update your local branch.</li>
+                  <li>Use <a class="tag">origin</a> to indicate the source of the pull or push.</li>
+                  <li>When using <a class="tag">main</a>, you're refering to the main branch.</li>
+                  <li>Use <a class="tag">push</a> for making changes to a branch.</li>
                   <li>After commiting, and deleting a branch, don't forget going back to main.</li>
-                  <li>Remember to always check the branch you're at with <span class="tag">&nbsp;git status&nbsp;</span> statement.</li>
+                  <li>Remember to always check the branch you're at with <a class="tag">git status</a> statement.</li>
                 </ul>
               </section>
            
               <section class="card" id="javascript-section">
-                <h2>JavaScript</h2>
-                <ul>
+                <h2 class="topic">JavaScript</h2>
+                <ul class="bullet-points">
                   <li>A JS statement is "falsy" if 0, -0, On, "", null, undefined, NaN or false.</li>
                   <li>To add an "else if", you need to close the first "if" statement and follow it with the "else if".</li>
                   <li>JavaScript follows the statements in order.</li>
@@ -90,7 +94,7 @@
         
         </main>
         
-        <footer>
+        <footer class="main_footer">
             <h3>LET'S CODE!</h3>
         </footer>
     </body>
